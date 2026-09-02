@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetterBookmarks | All your bookmarks, one keystroke away</title>
+<meta name="description" content="A Safari extension for macOS. As many Spaces as you keep contexts, folders nested as deep as you like, and every saved page in one start page that is always one keystroke away.">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/mark.png">
+<link rel="stylesheet" href="assets/style.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BetterBookmarks">
+<meta property="og:description" content="Spaces, nested folders and every page you have saved, in one start page a keystroke away. A Safari extension for macOS.">
+<meta property="og:image" content="https://skynyrd.github.io/betterbookmarks-site/assets/icon.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/mark.png" alt=""> BetterBookmarks</a>
+    <nav class="site-nav">
+      <a href="./" aria-current="page">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span> Safari extension for macOS</p>
+      <img class="hero-icon" src="assets/icon.png" alt="BetterBookmarks app icon" width="108" height="108">
+      <h1>All your bookmarks, one keystroke away.</h1>
+      <p class="lede">
+        BetterBookmarks replaces Safari&rsquo;s start page with a library that has room to grow: as
+        many Spaces as you keep contexts, folders nested as deep as you like, and every page you
+        have saved inside them. <kbd>&#8984;&#8679;O</kbd> brings it up from any tab, and it marks
+        the pages that are already open in one. Import what you have today in a single drop, and
+        export it again whenever you want.
+      </p>
+
+      <div class="cta">
+        <span class="btn is-pending">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v11"/><path d="m8 10.5 4 4 4-4"/><path d="M4 17.5v1.5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.5"/>
+          </svg>
+          Coming soon to the Mac App Store
+        </span>
+        <p class="price"><strong>$9.99</strong> &middot; one&#8209;time purchase &middot; no subscription, no account</p>
+      </div>
+
+      <!-- A stylised illustration of the start page, drawn with the product's own
+           design tokens. Real screenshots go in the gallery further down. -->
+      <div class="mock-frame" aria-hidden="true">
+        <div class="mock-chrome">
+          <i></i><i></i><i></i>
+          <span class="tab">New Tab</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-top">
+            <div class="mock-search">Search your library and open tabs</div>
+            <div class="pills">
+              <span class="pill is-on">Reading</span>
+              <span class="pill">Work</span>
+              <span class="pill">Kitchen</span>
+            </div>
+          </div>
+          <div class="mock-cols">
+            <div class="mock-grid">
+              <div class="fcard">
+                <div class="stack">
+                  <span class="mono" style="--h:12">N</span>
+                  <span class="mono" style="--h:205">A</span>
+                  <span class="mono" style="--h:265">G</span>
+                </div>
+                <b>Longform</b><span>12 pages</span>
+              </div>
+              <div class="fcard">
+                <div class="stack">
+                  <span class="mono" style="--h:265">F</span>
+                  <span class="mono" style="--h:32">D</span>
+                  <span class="mono" style="--h:150">L</span>
+                </div>
+                <b>Design systems</b><span>8 pages</span>
+              </div>
+              <div class="fcard">
+                <div class="stack">
+                  <span class="mono" style="--h:20">S</span>
+                  <span class="mono" style="--h:200">A</span>
+                  <span class="mono" style="--h:290">H</span>
+                </div>
+                <b>Swift &amp; SwiftUI</b><span>23 pages</span>
+              </div>
+              <div class="fcard">
+                <div class="stack">
+                  <span class="mono" style="--h:340">J</span>
+                  <span class="mono" style="--h:180">T</span>
+                </div>
+                <b>Japan trip</b><span>17 pages</span>
+              </div>
+              <div class="fcard">
+                <div class="stack">
+                  <span class="mono" style="--h:95">S</span>
+                  <span class="mono" style="--h:45">B</span>
+                  <span class="mono" style="--h:8">C</span>
+                </div>
+                <b>Home cooking</b><span>5 pages</span>
+              </div>
+              <div class="fcard">
+                <div class="stack">
+                  <span class="mono" style="--h:230">R</span>
+                  <span class="mono" style="--h:275">M</span>
+                  <span class="mono" style="--h:130">V</span>
+                </div>
+                <b>Read later</b><span>41 pages</span>
+              </div>
+            </div>
+
+            <aside class="mock-tabs">
+              <h4>Open tabs</h4>
+              <div class="group">github.com</div>
+              <div class="trow is-live"><span class="mono" style="--h:250">G</span><em>skynyrd/betterbookmarks</em><span class="live"></span></div>
+              <div class="trow"><span class="mono" style="--h:250">G</span><em>Pull requests</em></div>
+              <div class="group">developer.apple.com</div>
+              <div class="trow is-live"><span class="mono" style="--h:210">A</span><em>App Store Connect Help</em><span class="live"></span></div>
+              <div class="trow"><span class="mono" style="--h:210">A</span><em>Safari Web Extensions</em></div>
+              <div class="group">news.ycombinator.com</div>
+              <div class="trow"><span class="mono" style="--h:25">Y</span><em>Hacker News</em></div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="claim">
+    <div class="wrap narrow">
+      <div class="rule"></div>
+      <h2>A folder is a store, not a session.</h2>
+      <p>
+        Tab groups and session managers tie what you saved to what you have open, so tidying your
+        tabs quietly rewrites your library. BetterBookmarks refuses that trade. Opening an item
+        opens <em>that item only</em>. Closing a tab never changes the folder it came from. Nothing
+        you saved disappears because you cleaned up.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Built for a library that outgrew the bookmarks bar.</h2>
+        <p>
+          Every part of it assumes two things: that you have hundreds of saved pages rather than
+          a dozen, and that you will still be using it in two years.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="tile">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 4.5-9 4.5L3 7.5 12 3Z"/><path d="m3 12 9 4.5L21 12"/><path d="m3 16.5 9 4.5 9-4.5"/></svg>
+          </div>
+          <h3>Spaces, and folders inside folders</h3>
+          <p>
+            Keep work away from cooking with as many Spaces as you need, and nest folders as deep
+            as the subject deserves. Tree view when you want the structure, card view when you want
+            to see where you are going, and <kbd>&#8984;&#8679;O</kbd> to get there from any tab.
+            Drag anything anywhere.
+          </p>
+        </div>
+
+        <div class="tile">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13"/><path d="m13.5 4.5 3.5 3.5-3.5 3.5"/><path d="M20 16H7"/><path d="M10.5 12.5 7 16l3.5 3.5"/></svg>
+          </div>
+          <h3>Switch, don&rsquo;t duplicate</h3>
+          <p>
+            Saved pages that are open right now are marked as you look at them. Click one and Safari
+            jumps to the existing tab. Your open tabs sit in a column beside the library, grouped by
+            site, and one search box filters both at once.
+          </p>
+        </div>
+
+        <div class="tile">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></svg>
+          </div>
+          <h3>Capture without breaking stride</h3>
+          <ul>
+            <li>Toolbar button for the page you are on</li>
+            <li><kbd>&#8984;&#8679;D</kbd> files it in the last folder you used, with no interface at all</li>
+            <li>Right-click a page or a link to save it</li>
+            <li>Save every open tab into a new folder in one go</li>
+          </ul>
+        </div>
+
+        <div class="tile">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20V4"/><path d="m3.5 7.5 3.5-3.5 3.5 3.5"/><path d="M17 4v16"/><path d="m20.5 16.5-3.5 3.5-3.5-3.5"/></svg>
+          </div>
+          <h3>Import and export, both ways</h3>
+          <p>
+            Bring in bookmarks from Safari, Chrome, Firefox or Arc. Safari hands you a
+            <code>.zip</code> and you can drop that in as it is. Every import shows a dry-run
+            preview first, can be undone in one step, and importing the same file twice adds
+            nothing.
+            Export a lossless JSON backup or standard bookmarks HTML whenever you like.
+          </p>
+        </div>
+
+        <div class="tile">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
+          </div>
+          <h3>Seven languages</h3>
+          <p>
+            English, German, Spanish, French, Turkish, Chinese and Hindi. It picks yours on first
+            run and you can change it any time in Settings.
+          </p>
+        </div>
+
+        <div class="tile">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>
+          </div>
+          <h3>Nothing leaves your Mac</h3>
+          <p>
+            No account, no sign-in, no analytics, no servers. The extension makes no network
+            requests of its own and asks for no host permissions, so it cannot read the pages you
+            visit. The <a href="privacy.html">privacy policy</a> spells that out, and it is
+            short.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>A look around.</h2>
+        <p>The start page, capture, and moving your existing bookmarks in.</p>
+      </div>
+
+      <!-- Drop PNGs with these exact names into assets/screenshots/ and they
+           appear automatically. Until then each frame shows its filename. -->
+      <div class="shots">
+        <figure>
+          <div class="frame" data-file="assets/screenshots/01-library.png">
+            <img src="assets/screenshots/01-library.png" alt="The BetterBookmarks start page in card view, showing Spaces and folders" loading="lazy" onerror="this.remove()">
+          </div>
+          <figcaption>Card view. Spaces across the top, folders below, everything draggable.</figcaption>
+        </figure>
+        <figure>
+          <div class="frame" data-file="assets/screenshots/02-open-tabs.png">
+            <img src="assets/screenshots/02-open-tabs.png" alt="Tree view with the open tabs column beside it" loading="lazy" onerror="this.remove()">
+          </div>
+          <figcaption>Tree view with open tabs alongside, grouped by site and marked live.</figcaption>
+        </figure>
+        <figure>
+          <div class="frame" data-file="assets/screenshots/03-capture.png">
+            <img src="assets/screenshots/03-capture.png" alt="The toolbar popup saving the current page" loading="lazy" onerror="this.remove()">
+          </div>
+          <figcaption>Saving the page you are on, from the toolbar.</figcaption>
+        </figure>
+        <figure>
+          <div class="frame" data-file="assets/screenshots/04-import.png">
+            <img src="assets/screenshots/04-import.png" alt="The import screen showing a dry-run preview" loading="lazy" onerror="this.remove()">
+          </div>
+          <figcaption>Import, with a dry-run preview before anything is written.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="claim">
+    <div class="wrap narrow">
+      <div class="rule"></div>
+      <h2>Requirements</h2>
+      <p>
+        macOS 15 or later, with Safari 18 or later. After installing, open the app once and switch
+        BetterBookmarks on in <strong>Safari &rarr; Settings &rarr; Extensions</strong>. The
+        <a href="support.html">support page</a> walks through it.
+      </p>
+      <div class="cta cta--start">
+        <span class="btn is-pending">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v11"/><path d="m8 10.5 4 4 4-4"/><path d="M4 17.5v1.5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.5"/>
+          </svg>
+          Coming soon to the Mac App Store
+        </span>
+        <p class="price"><strong>$9.99</strong> &middot; one&#8209;time purchase &middot; no subscription, no account</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>&copy; 2026 Anil Surmeli</span>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:anil.surmeli@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

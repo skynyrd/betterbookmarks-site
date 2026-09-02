@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support | BetterBookmarks</title>
+<meta name="description" content="Getting started, keyboard shortcuts, importing your bookmarks, and answers to common questions about BetterBookmarks for Safari.">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/mark.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/mark.png" alt=""> BetterBookmarks</a>
+    <nav class="site-nav">
+      <a href="./">Overview</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Support</h1>
+      <p>
+        How to get BetterBookmarks running, what the keyboard shortcuts are, and how to bring
+        your existing bookmarks across. Plus honest answers to the awkward questions.
+      </p>
+    </div>
+  </div>
+
+  <div class="prose">
+    <div class="wrap">
+
+      <h2>Getting started</h2>
+      <ol>
+        <li><strong>Open BetterBookmarks.app once.</strong> It shows a single window whose only job
+          is to tell you the next step.</li>
+        <li>Go to <strong>Safari &rarr; Settings &rarr; Extensions</strong> and tick
+          <strong>BetterBookmarks</strong>.</li>
+        <li>Open a new tab with <kbd>&#8984;T</kbd>. Your library appears.</li>
+      </ol>
+      <div class="callout">
+        Safari caches extension resources aggressively. If something looks stale after an update,
+        switch the extension off and on again in Safari&rsquo;s settings.
+      </div>
+
+      <h2>Keyboard shortcuts</h2>
+      <div class="keys">
+        <div><span><kbd>&#8984;&#8679;O</kbd></span><span>Open BetterBookmarks. Reuses the existing tab instead of opening another.</span></div>
+        <div><span><kbd>&#8984;&#8679;D</kbd></span><span>Save the current page to the last folder you used, with no interface at all.</span></div>
+        <div><span><kbd>&#8984;T</kbd></span><span>Whatever you choose in Settings &rarr; New Tab: the start page, blank, or a URL of your own.</span></div>
+      </div>
+      <p>
+        Safari lets you change these yourself in <strong>Safari &rarr; Settings &rarr; Extensions
+        &rarr; BetterBookmarks</strong>. There is also a <strong>Save all open tabs</strong>
+        command, which has no shortcut by default. You can assign one in the same place.
+      </p>
+
+      <h2>Importing your bookmarks</h2>
+      <p>
+        Safari gives extensions no bookmarks API, so bookmarks come in as a file rather than
+        appearing by magic. Open <strong>Settings &rarr; Import</strong> and drop a file on it.
+      </p>
+      <h3>From Safari</h3>
+      <p>
+        <strong>File &rarr; Export Browsing Data to File</strong>, tick only <strong>Bookmarks</strong>,
+        then drop the resulting <code>.zip</code> straight in. No need to unzip it.
+      </p>
+      <h3>From Chrome, Firefox, Arc or anything else</h3>
+      <p>
+        Export bookmarks as HTML from that browser and drop the <code>.html</code> file in. The
+        standard Netscape bookmark format is what every browser produces.
+      </p>
+      <h3>What happens before anything is written</h3>
+      <p>
+        You get a dry-run preview first: how many items will be added, how many updated, how many
+        are already present. Nothing is written until you confirm, the whole import can be undone
+        in one step afterwards, and importing the same file twice adds nothing.
+      </p>
+      <p>
+        <strong>Merge</strong> combines the file with what is already there.
+        <strong>Replace all</strong> moves everything current to Trash first. To Trash, not to
+        oblivion.
+      </p>
+
+      <h2>Backups</h2>
+      <p>
+        <strong>Settings &rarr; Export</strong> offers three files.
+        <strong>Export backup (JSON)</strong> is the lossless one. It keeps ids, ordering and
+        timestamps, and is what a restore should use. <strong>Export without deleted</strong> is the
+        same thing minus the soft-deleted records. <strong>Export bookmarks (HTML)</strong> is for
+        moving into another browser.
+      </p>
+
+      <h2>Settings, briefly</h2>
+      <ul>
+        <li><strong>Appearance</strong> follows the system, or you can pin it to light or dark.</li>
+        <li><strong>Language</strong> covers English, German, Spanish, French, Turkish, Chinese and
+          Hindi.</li>
+        <li><strong>Open tabs list</strong> shows every open tab with the saved ones marked, or only
+          the tabs you have not saved yet. Either way they can be grouped under their site.</li>
+        <li><strong>New Tab</strong> decides what <kbd>&#8984;T</kbd> shows: the full start page, a
+          blank tab, or a specific page.</li>
+      </ul>
+
+      <h2>Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>The extension does not appear in Safari&rsquo;s settings.</summary>
+          <p>
+            Launch BetterBookmarks.app at least once. Safari only lists an extension after its
+            containing app has run. If it is still missing, quit Safari completely
+            (<kbd>&#8984;Q</kbd>) and open it again.
+          </p>
+        </details>
+        <details>
+          <summary>Can I get Safari&rsquo;s own Start Page back?</summary>
+          <p>
+            Not while the extension is on. Safari does not let an extension hand the New Tab page
+            back to Safari&rsquo;s own Start Page once the override is declared. That is a platform
+            rule, not a choice. <strong>Settings &rarr; New Tab &rarr; Blank</strong> is
+            the closest equivalent, and <kbd>&#8984;&#8679;O</kbd> still opens BetterBookmarks when
+            you want it.
+          </p>
+          <p>
+            To restore Safari&rsquo;s Start Page fully, switch the extension off in
+            <strong>Safari &rarr; Settings &rarr; Extensions</strong>. Nothing in your library is
+            lost by doing so.
+          </p>
+        </details>
+        <details>
+          <summary>Does my library sync between my Macs?</summary>
+          <p>
+            No, and it would be dishonest to imply otherwise. Safari exposes a sync storage API but
+            it does not actually sync across devices, so building on it would give you a library
+            that looks synced and is not.
+          </p>
+          <p>
+            Move a library deliberately instead: <strong>Export backup (JSON)</strong> on one Mac,
+            <strong>Import</strong> on the other. Because import is idempotent, you can repeat it
+            whenever you like without creating duplicates.
+          </p>
+        </details>
+        <details>
+          <summary>Where is my data kept?</summary>
+          <p>
+            On your Mac, in Safari&rsquo;s extension storage and IndexedDB. There is no server
+            involved at any point. See the <a href="privacy.html">privacy policy</a>.
+          </p>
+        </details>
+        <details>
+          <summary>I deleted something by accident.</summary>
+          <p>
+            Deletes are soft. Whatever you removed is waiting in <strong>Trash</strong> on the
+            start page.
+          </p>
+        </details>
+        <details>
+          <summary>Why does it ask for the &ldquo;tabs&rdquo; permission?</summary>
+          <p>
+            To tell which of your saved pages are open right now, so that clicking one switches to
+            the existing tab rather than opening a duplicate. That is the whole reason.
+          </p>
+          <p>
+            It asks for no host permissions, which means it cannot read the contents of the pages
+            you visit. It sees the addresses of open tabs and nothing else.
+          </p>
+        </details>
+        <details>
+          <summary>Does it work on iPhone or iPad?</summary>
+          <p>macOS only for now.</p>
+        </details>
+        <details>
+          <summary>Is $9.99 a subscription?</summary>
+          <p>
+            No. One payment, and updates come through the Mac App Store like any other app you own.
+          </p>
+        </details>
+        <details>
+          <summary>I want a refund.</summary>
+          <p>
+            Purchases are handled by Apple, so refunds go through them:
+            <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. If something is
+            broken, though, email me first. I would rather fix it.
+          </p>
+        </details>
+      </div>
+
+      <h2>Still stuck?</h2>
+      <p>
+        Email <a href="mailto:anil.surmeli@gmail.com">anil.surmeli@gmail.com</a>. Bug reports,
+        feature requests and complaints all welcome. It helps to include your macOS and Safari
+        versions and, if something looked wrong, a screenshot.
+      </p>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>&copy; 2026 Anil Surmeli</span>
+    <nav>
+      <a href="./">Overview</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:anil.surmeli@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | BetterBookmarks</title>
+<meta name="description" content="BetterBookmarks collects no data. No account, no analytics, no servers. Everything stays on your Mac.">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/mark.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/mark.png" alt=""> BetterBookmarks</a>
+    <nav class="site-nav">
+      <a href="./">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p>
+        BetterBookmarks collects no personal data, of any kind, from anyone. There is no account,
+        no sign-in, no analytics, no crash reporting and no server component. This page explains
+        what that means in practice.
+      </p>
+      <p style="color:var(--bb-text-3);font-size:0.9rem">Last updated 2 September 2026.</p>
+    </div>
+  </div>
+
+  <div class="prose">
+    <div class="wrap">
+
+      <h2>What is stored, and where</h2>
+      <p>
+        Your Spaces, folders, saved pages and settings are stored locally on your Mac, using
+        Safari&rsquo;s extension storage and IndexedDB. They stay on the device that created them.
+        Nothing is uploaded, and there is nowhere for it to be uploaded to.
+      </p>
+      <p>
+        There is no cloud sync. Moving a library between Macs is something you do deliberately, by
+        exporting a backup file and importing it on the other machine.
+      </p>
+
+      <h2>Network activity</h2>
+      <p>
+        The extension makes no network requests of its own. There is no <code>fetch</code>, no
+        <code>XMLHttpRequest</code> and no WebSocket anywhere in it, no analytics SDK, no remote
+        configuration and no remotely loaded code.
+      </p>
+      <p>
+        The one thing that touches the network is website icons: each saved page shows its site&rsquo;s
+        favicon, loaded as an ordinary image directly from that site, with a
+        <code>no-referrer</code> policy. The site sees a request for its own icon and nothing about
+        where it came from. Which icon address worked is remembered locally so the request is not
+        repeated. No third party is involved, and no icon service is used.
+      </p>
+
+      <h2>Permissions</h2>
+      <p>BetterBookmarks asks for three permissions and no others.</p>
+      <ul>
+        <li><strong>storage</strong> lets it keep your library and settings on your Mac.</li>
+        <li><strong>tabs</strong> lets it tell which of your saved pages are open right now, so
+          that clicking one switches to that tab instead of opening a duplicate.</li>
+        <li><strong>contextMenus</strong> lets it add a save item to Safari&rsquo;s right-click
+          menu.</li>
+      </ul>
+      <p>
+        It requests <strong>no host permissions</strong>. It cannot read, modify or inject anything
+        into the pages you visit, and it has no access to page content, form fields, passwords or
+        browsing history.
+      </p>
+
+      <h2>Import and export</h2>
+      <p>
+        Importing a bookmark file reads that file on your Mac only. Exports are written to a
+        location you choose. Neither operation transmits anything.
+      </p>
+
+      <h2>Purchases</h2>
+      <p>
+        BetterBookmarks is sold through the Mac App Store. Apple handles the purchase and shares no
+        identifying information about you with me. I see only aggregate sales figures. See
+        <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s privacy policy</a> for how Apple
+        handles that transaction.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        BetterBookmarks collects no data from anyone, including children under 13. It contains no
+        advertising and no third-party content.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy ever changes, the new version will be published on this page with a new date.
+        Given that the answer is &ldquo;nothing is collected&rdquo;, changes are unlikely.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about any of this: <a href="mailto:anil.surmeli@gmail.com">anil.surmeli@gmail.com</a>.
+      </p>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>&copy; 2026 Anil Surmeli</span>
+    <nav>
+      <a href="./">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:anil.surmeli@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
