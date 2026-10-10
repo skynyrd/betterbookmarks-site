@@ -31,7 +31,7 @@
         no sign-in, no analytics, no crash reporting and no server component. This page explains
         what that means in practice.
       </p>
-      <p style="color:var(--bb-text-3);font-size:0.9rem">Last updated 2 September 2026.</p>
+      <p style="color:var(--bb-text-3);font-size:0.9rem">Last updated 10 October 2026.</p>
     </div>
   </div>
 
@@ -77,13 +77,18 @@
       </p>
 
       <h2>Permissions</h2>
-      <p>BetterBookmarks asks for three permissions and no others.</p>
+      <p>BetterBookmarks asks for four permissions and no others.</p>
       <ul>
         <li><strong>storage</strong> lets it keep your library and settings on your Mac.</li>
         <li><strong>tabs</strong> lets it tell which of your saved pages are open right now, so
           that clicking one switches to that tab instead of opening a duplicate.</li>
         <li><strong>contextMenus</strong> lets it add a save item to Safari&rsquo;s right-click
           menu.</li>
+        <li><strong>nativeMessaging</strong> lets the extension speak to the BetterBookmarks app
+          that contains it, on your Mac. Two things need that and nothing else does: reading and
+          writing the sync file in your own iCloud Drive, which a Safari extension cannot reach by
+          itself, and opening Safari&rsquo;s settings pane for the extension from a button. It can
+          reach that one app and no other, and nothing in that conversation leaves your Mac.</li>
       </ul>
 
       <h2>Website access</h2>

@@ -42,8 +42,17 @@
           is to tell you the next step.</li>
         <li>Go to <strong>Safari &rarr; Settings &rarr; Extensions</strong> and tick
           <strong>BetterBookmarks</strong>.</li>
+        <li>Safari asks whether it may hand the New Tab page over. Choose
+          <strong>Use for New Windows and Tabs</strong>. If you miss the prompt, the same switch
+          lives in <strong>Safari &rarr; Settings &rarr; General &rarr; New tabs open with</strong>,
+          where BetterBookmarks appears in the list.</li>
         <li>Open a new tab with <kbd>&#8984;T</kbd>. Your library appears.</li>
       </ol>
+      <div class="callout">
+        Step three is asked once <em>per Mac</em>, and the answer does not travel through iCloud.
+        A second Mac therefore starts out showing Safari&rsquo;s own Start Page even when
+        everything else is already set up. <kbd>&#8963;&#8984;O</kbd> works either way.
+      </div>
       <div class="callout">
         Safari caches extension resources aggressively. If something looks stale after an update,
         switch the extension off and on again in Safari&rsquo;s settings.
@@ -51,7 +60,7 @@
 
       <h2>Keyboard shortcuts</h2>
       <div class="keys">
-        <div><span><kbd>&#8984;&#8679;O</kbd></span><span>Open BetterBookmarks. Reuses the existing tab instead of opening another.</span></div>
+        <div><span><kbd>&#8963;&#8984;O</kbd></span><span>Open BetterBookmarks. Reuses the existing tab instead of opening another.</span></div>
         <div><span><kbd>&#8984;&#8679;D</kbd></span><span>Save the current page to the last folder you used, with no interface at all.</span></div>
         <div><span><kbd>&#8984;T</kbd></span><span>Whatever you choose in Settings &rarr; New Tab: the start page, blank, or a URL of your own.</span></div>
       </div>
@@ -59,6 +68,13 @@
         Safari lets you change these yourself in <strong>Safari &rarr; Settings &rarr; Extensions
         &rarr; BetterBookmarks</strong>. There is also a <strong>Save all open tabs</strong>
         command, which has no shortcut by default. You can assign one in the same place.
+      </p>
+      <p>
+        A web page that binds the same keys gets them first, which is why the default is
+        <kbd>&#8963;&#8984;O</kbd> and not the more obvious <kbd>&#8963;&#8984;O</kbd>: several of
+        the big web apps read that one as &ldquo;new chat&rdquo; and swallow it. Control and
+        Command together is a combination pages essentially never reach for. If one does, reassign
+        it in the settings pane above; the toolbar button works regardless.
       </p>
 
       <h2>Importing your bookmarks</h2>
@@ -140,18 +156,49 @@
           </p>
         </details>
         <details>
-          <summary>Can I get Safari&rsquo;s own Start Page back?</summary>
+          <summary><kbd>&#8984;T</kbd> still shows Safari&rsquo;s Start Page.</summary>
           <p>
-            Not while the extension is on. Safari does not let an extension hand the New Tab page
-            back to Safari&rsquo;s own Start Page once the override is declared. That is a platform
-            rule, not a choice. <strong>Settings &rarr; New Tab &rarr; Blank</strong> is
-            the closest equivalent, and <kbd>&#8984;&#8679;O</kbd> still opens BetterBookmarks when
-            you want it.
+            Safari has not been given the New Tab page yet. Open
+            <strong>Safari &rarr; Settings &rarr; General</strong> and set both
+            <strong>New tabs open with</strong> and
+            <strong>New windows open with</strong> to BetterBookmarks.
           </p>
           <p>
-            To restore Safari&rsquo;s Start Page fully, switch the extension off in
-            <strong>Safari &rarr; Settings &rarr; Extensions</strong>. Nothing in your library is
-            lost by doing so.
+            This is asked once per Mac and the answer is not synced, which is why a second Mac can
+            have the extension installed, enabled and fully synced and still open Safari&rsquo;s
+            own page. Until it is granted, the three choices under
+            <strong>Settings &rarr; New Tab</strong> have nothing to act on.
+          </p>
+        </details>
+        <details>
+          <summary>Can I get Safari&rsquo;s own Start Page back?</summary>
+          <p>
+            Yes, and without turning anything off: in
+            <strong>Safari &rarr; Settings &rarr; General</strong>, point
+            <strong>New tabs open with</strong> back at <strong>Start Page</strong>. The extension
+            carries on working and <kbd>&#8963;&#8984;O</kbd> still brings the library up when you
+            want it.
+          </p>
+          <p>
+            What the extension cannot do is hand the page back by itself: once the override is
+            declared in its manifest, <strong>Settings &rarr; New Tab &rarr; Blank</strong> is the
+            closest it can get on its own. That is a platform rule, not a choice. Switching the
+            extension off in <strong>Safari &rarr; Settings &rarr; Extensions</strong> also
+            restores the Start Page, and loses nothing from your library.
+          </p>
+        </details>
+        <details>
+          <summary>The shortcut does nothing on some sites.</summary>
+          <p>
+            That site has bound the same combination and gets the key first; the shortcut reaches
+            the extension everywhere else. Pick a different one in
+            <strong>Safari &rarr; Settings &rarr; Extensions &rarr; BetterBookmarks</strong>. The
+            toolbar button works on those sites in the meantime.
+          </p>
+          <p>
+            If the shortcut field there is empty rather than showing
+            <kbd>&#8963;&#8984;O</kbd>, Safari did not accept the suggested default and nothing is
+            bound. Type one in; it sticks.
           </p>
         </details>
         <details>

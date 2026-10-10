@@ -37,7 +37,7 @@
       <p class="lede">
         BetterBookmarks replaces Safari&rsquo;s start page with a library that has room to grow: as
         many Spaces as you keep contexts, folders nested as deep as you like, and every page you
-        have saved inside them. <kbd>&#8984;&#8679;O</kbd> brings it up from any tab, and it marks
+        have saved inside them. <kbd>&#8963;&#8984;O</kbd> brings it up from any tab, and it marks
         the pages that are already open in one. Import what you have today in a single drop, and
         keep every Mac holding the same library through iCloud.
       </p>
@@ -52,87 +52,17 @@
         <p class="price"><strong>$9.99</strong> &middot; one&#8209;time purchase &middot; no subscription, no account</p>
       </div>
 
-      <!-- A stylised illustration of the start page, drawn with the product's own
-           design tokens. Real screenshots go in the gallery further down. -->
-      <div class="mock-frame" aria-hidden="true">
-        <div class="mock-chrome">
-          <i></i><i></i><i></i>
-          <span class="tab">New Tab</span>
-        </div>
-        <div class="mock-body">
-          <div class="mock-top">
-            <div class="mock-search">Search your library and open tabs</div>
-            <div class="pills">
-              <span class="pill is-on">Reading</span>
-              <span class="pill">Work</span>
-              <span class="pill">Kitchen</span>
-            </div>
-          </div>
-          <div class="mock-cols">
-            <div class="mock-grid">
-              <div class="fcard">
-                <div class="stack">
-                  <span class="mono" style="--h:12">N</span>
-                  <span class="mono" style="--h:205">A</span>
-                  <span class="mono" style="--h:265">G</span>
-                </div>
-                <b>Longform</b><span>12 pages</span>
-              </div>
-              <div class="fcard">
-                <div class="stack">
-                  <span class="mono" style="--h:265">F</span>
-                  <span class="mono" style="--h:32">D</span>
-                  <span class="mono" style="--h:150">L</span>
-                </div>
-                <b>Design systems</b><span>8 pages</span>
-              </div>
-              <div class="fcard">
-                <div class="stack">
-                  <span class="mono" style="--h:20">S</span>
-                  <span class="mono" style="--h:200">A</span>
-                  <span class="mono" style="--h:290">H</span>
-                </div>
-                <b>Swift &amp; SwiftUI</b><span>23 pages</span>
-              </div>
-              <div class="fcard">
-                <div class="stack">
-                  <span class="mono" style="--h:340">J</span>
-                  <span class="mono" style="--h:180">T</span>
-                </div>
-                <b>Japan trip</b><span>17 pages</span>
-              </div>
-              <div class="fcard">
-                <div class="stack">
-                  <span class="mono" style="--h:95">S</span>
-                  <span class="mono" style="--h:45">B</span>
-                  <span class="mono" style="--h:8">C</span>
-                </div>
-                <b>Home cooking</b><span>5 pages</span>
-              </div>
-              <div class="fcard">
-                <div class="stack">
-                  <span class="mono" style="--h:230">R</span>
-                  <span class="mono" style="--h:275">M</span>
-                  <span class="mono" style="--h:130">V</span>
-                </div>
-                <b>Read later</b><span>41 pages</span>
-              </div>
-            </div>
-
-            <aside class="mock-tabs">
-              <h4>Open tabs</h4>
-              <div class="group">github.com</div>
-              <div class="trow is-live"><span class="mono" style="--h:250">G</span><em>skynyrd/betterbookmarks</em><span class="live"></span></div>
-              <div class="trow"><span class="mono" style="--h:250">G</span><em>Pull requests</em></div>
-              <div class="group">developer.apple.com</div>
-              <div class="trow is-live"><span class="mono" style="--h:210">A</span><em>App Store Connect Help</em><span class="live"></span></div>
-              <div class="trow"><span class="mono" style="--h:210">A</span><em>Safari Web Extensions</em></div>
-              <div class="group">news.ycombinator.com</div>
-              <div class="trow"><span class="mono" style="--h:25">Y</span><em>Hacker News</em></div>
-            </aside>
-          </div>
-        </div>
-      </div>
+      <!-- The start page as it actually is. The screenshot already carries
+           Safari's own window chrome and drop shadow, so the frame around it is
+           a radius and a hairline rather than another drawn window. -->
+      <figure class="hero-shot">
+        <img src="assets/screenshots/hero-1100.jpg"
+             srcset="assets/screenshots/hero-1100.jpg 1100w,
+                     assets/screenshots/hero-2200.jpg 2200w"
+             sizes="(max-width: 72rem) 92vw, 68rem"
+             alt="The BetterBookmarks start page in Safari: Spaces along the top, a tree of folders and saved pages below them, and a column of open tabs grouped by site beside it"
+             width="2200" height="1375" fetchpriority="high" decoding="async">
+      </figure>
     </div>
   </div>
 
@@ -168,7 +98,7 @@
           <p>
             Keep work away from cooking with as many Spaces as you need, and nest folders as deep
             as the subject deserves. Tree view when you want the structure, card view when you want
-            to see where you are going, and <kbd>&#8984;&#8679;O</kbd> to get there from any tab.
+            to see where you are going, and <kbd>&#8963;&#8984;O</kbd> to get there from any tab.
             Drag anything anywhere.
           </p>
         </div>
@@ -251,73 +181,6 @@
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <h2>A look around.</h2>
-      </div>
-
-      <div class="shots">
-        <figure>
-          <button class="frame" type="button" data-full="assets/screenshots/01-start-page.png"
-                  aria-label="Enlarge: Tree view">
-            <img src="assets/screenshots/thumbs/01-start-page.jpg" alt="The BetterBookmarks start page in tree view, with Spaces along the top and an open tabs column beside the library"
-                 width="1400" height="875" loading="lazy" decoding="async">
-          </button>
-          <figcaption>Tree view. Spaces along the top, folders below, and every open tab in the column beside them, grouped by the site it belongs to.</figcaption>
-        </figure>
-        <figure>
-          <button class="frame" type="button" data-full="assets/screenshots/02-card-view.png"
-                  aria-label="Enlarge: Card view, for when you would rather see what is inside a folder than open it">
-            <img src="assets/screenshots/thumbs/02-card-view.jpg" alt="The same library in card view, each folder shown as a card listing its pages"
-                 width="1400" height="875" loading="lazy" decoding="async">
-          </button>
-          <figcaption>Card view, for when you would rather see what is inside a folder than open it.</figcaption>
-        </figure>
-        <figure>
-          <button class="frame" type="button" data-full="assets/screenshots/03-subfolders.png"
-                  aria-label="Enlarge: Folders nest as deep as the subject needs">
-            <img src="assets/screenshots/thumbs/03-subfolders.jpg" alt="A university Space with folders nested several levels deep"
-                 width="1400" height="875" loading="lazy" decoding="async">
-          </button>
-          <figcaption>Folders nest as deep as the subject needs. A semester holds its units, and a unit holds its pages.</figcaption>
-        </figure>
-        <figure>
-          <button class="frame" type="button" data-full="assets/screenshots/04-open-tabs.png"
-                  aria-label="Enlarge: The chips count how many of this Space's saved pages are open right now, and how many have a tab open somewhere else on the same site">
-            <img src="assets/screenshots/thumbs/04-open-tabs.jpg" alt="A Space in dark mode showing counts of open and nearby saved pages"
-                 width="1400" height="875" loading="lazy" decoding="async">
-          </button>
-          <figcaption>The chips count how many of this Space&rsquo;s saved pages are open right now, and how many have a tab open somewhere else on the same site.</figcaption>
-        </figure>
-        <figure>
-          <button class="frame" type="button" data-full="assets/screenshots/05-save-from-toolbar.png"
-                  aria-label="Enlarge: Saving the page you are on: pick the folder, add a note if it needs one">
-            <img src="assets/screenshots/thumbs/05-save-from-toolbar.jpg" alt="The toolbar popup saving the current page, with a folder picker and a note field"
-                 width="1400" height="875" loading="lazy" decoding="async">
-          </button>
-          <figcaption>Saving the page you are on: pick the folder, add a note if it needs one. Or file every open tab into a new folder in one go.</figcaption>
-        </figure>
-        <figure>
-          <button class="frame" type="button" data-full="assets/screenshots/06-import-preview.png"
-                  aria-label="Enlarge: Import tells you what it is about to do before it does it, and the whole thing can be undone in one step afterwards">
-            <img src="assets/screenshots/thumbs/06-import-preview.jpg" alt="The import screen showing a dry-run preview of what will be added and updated"
-                 width="1400" height="875" loading="lazy" decoding="async">
-          </button>
-          <figcaption>Import tells you what it is about to do before it does it, and the whole thing can be undone in one step afterwards.</figcaption>
-        </figure>
-        <figure>
-          <button class="frame" type="button" data-full="assets/screenshots/07-languages.png"
-                  aria-label="Enlarge: Settings in Turkish">
-            <img src="assets/screenshots/thumbs/07-languages.jpg" alt="The settings page displayed in Turkish"
-                 width="1400" height="875" loading="lazy" decoding="async">
-          </button>
-          <figcaption>Settings in Turkish. English, German, Spanish, French, Turkish, Chinese and Hindi, picked from your system on first run.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
   <section class="claim">
     <div class="wrap narrow">
       <div class="rule"></div>
@@ -351,89 +214,6 @@
     </nav>
   </div>
 </footer>
-
-<dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
-  <button class="lb-close" type="button" aria-label="Close">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg>
-  </button>
-  <button class="lb-nav lb-prev" type="button" aria-label="Previous screenshot">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 5-7 7 7 7"/></svg>
-  </button>
-  <img class="lb-img" alt="">
-  <button class="lb-nav lb-next" type="button" aria-label="Next screenshot">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 5 7 7-7 7"/></svg>
-  </button>
-  <p class="lb-caption"><span class="lb-count"></span><span class="lb-text"></span></p>
-</dialog>
-
-<script>
-(function () {
-  var dialog = document.getElementById('lightbox');
-  var frames = Array.prototype.slice.call(document.querySelectorAll('.shots .frame'));
-  if (!dialog || !frames.length || typeof dialog.showModal !== 'function') return;
-
-  var shots = frames.map(function (frame) {
-    var img = frame.querySelector('img');
-    return {
-      full: frame.dataset.full,
-      thumb: img.getAttribute('src'),
-      alt: img.getAttribute('alt'),
-      caption: frame.closest('figure').querySelector('figcaption').textContent.trim(),
-    };
-  });
-
-  var img = dialog.querySelector('.lb-img');
-  var text = dialog.querySelector('.lb-text');
-  var count = dialog.querySelector('.lb-count');
-  var index = 0;
-
-  function show(i) {
-    index = (i + shots.length) % shots.length;
-    var shot = shots[index];
-    // The thumbnail is already in cache, so it paints immediately and the full
-    // image replaces it once decoded. Without this the viewer flashes empty for
-    // as long as a 2560px PNG takes to arrive.
-    img.src = shot.thumb;
-    img.alt = shot.alt;
-    text.textContent = shot.caption;
-    count.textContent = index + 1 + ' / ' + shots.length;
-    var full = new Image();
-    full.onload = function () {
-      if (shots[index] === shot) img.src = shot.full;
-    };
-    full.src = shot.full;
-  }
-
-  frames.forEach(function (frame, i) {
-    frame.addEventListener('click', function () {
-      show(i);
-      dialog.showModal();
-      document.documentElement.classList.add('is-locked');
-    });
-  });
-
-  dialog.querySelector('.lb-prev').addEventListener('click', function () { show(index - 1); });
-  dialog.querySelector('.lb-next').addEventListener('click', function () { show(index + 1); });
-  dialog.querySelector('.lb-close').addEventListener('click', function () { dialog.close(); });
-
-  // Escape and focus trapping come from <dialog>. The arrow keys do not.
-  dialog.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowLeft') { e.preventDefault(); show(index - 1); }
-    if (e.key === 'ArrowRight') { e.preventDefault(); show(index + 1); }
-  });
-
-  // Everything visible is a child element, so a click that lands on the dialog
-  // itself landed on the empty space around the image.
-  dialog.addEventListener('click', function (e) {
-    if (e.target === dialog) dialog.close();
-  });
-
-  dialog.addEventListener('close', function () {
-    document.documentElement.classList.remove('is-locked');
-    frames[index].focus();
-  });
-})();
-</script>
 
 </body>
 </html>
