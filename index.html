@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BetterBookmarks | All your bookmarks, one keystroke away</title>
-<meta name="description" content="A Safari extension for macOS. As many Spaces as you keep contexts, folders nested as deep as you like, and every saved page in one start page that is always one keystroke away.">
+<meta name="description" content="A Safari extension for macOS. As many Spaces as you keep contexts, folders nested as deep as you like, every saved page one keystroke away, and the same library on every Mac through iCloud.">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/mark.png">
 <link rel="stylesheet" href="assets/style.css">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BetterBookmarks">
-<meta property="og:description" content="Spaces, nested folders and every page you have saved, in one start page a keystroke away. A Safari extension for macOS.">
+<meta property="og:description" content="Spaces, nested folders and every page you have saved, in one start page a keystroke away, on every Mac you own. A Safari extension for macOS.">
 <meta property="og:image" content="https://skynyrd.github.io/betterbookmarks-site/assets/icon.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -39,7 +39,7 @@
         many Spaces as you keep contexts, folders nested as deep as you like, and every page you
         have saved inside them. <kbd>&#8984;&#8679;O</kbd> brings it up from any tab, and it marks
         the pages that are already open in one. Import what you have today in a single drop, and
-        export it again whenever you want.
+        keep every Mac holding the same library through iCloud.
       </p>
 
       <div class="cta">
@@ -214,6 +214,18 @@
 
         <div class="tile">
           <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 0 1-13.7 5.6L4 16"/><path d="M4 20v-4h4"/></svg>
+          </div>
+          <h3>One library, every Mac</h3>
+          <p>
+            Sync through your own iCloud, and only when you ask. It merges rather than overwrites,
+            so a page saved on the laptop and a folder renamed on the desktop both survive, and
+            deletions travel too. No account, and nothing of mine in the path.
+          </p>
+        </div>
+
+        <div class="tile">
+          <div class="ico">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
           </div>
           <h3>Seven languages</h3>
@@ -227,12 +239,12 @@
           <div class="ico">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>
           </div>
-          <h3>Nothing leaves your Mac</h3>
+          <h3>No account, no servers</h3>
           <p>
-            No account, no sign-in, no analytics, no servers. The extension makes no network
-            requests of its own and asks for no host permissions, so it cannot read the pages you
-            visit. The <a href="privacy.html">privacy policy</a> spells that out, and it is
-            short.
+            No sign-in, no analytics, nothing of mine between you and your bookmarks. The extension
+            makes no network requests of its own and ships no content scripts, so nothing of it
+            runs inside the pages you visit. The <a href="privacy.html">privacy policy</a> spells
+            that out, and it is short.
           </p>
         </div>
       </div>
@@ -243,35 +255,64 @@
     <div class="wrap">
       <div class="section-head">
         <h2>A look around.</h2>
-        <p>The start page, capture, and moving your existing bookmarks in.</p>
       </div>
 
-      <!-- Drop PNGs with these exact names into assets/screenshots/ and they
-           appear automatically. Until then each frame shows its filename. -->
       <div class="shots">
         <figure>
-          <div class="frame" data-file="assets/screenshots/01-library.png">
-            <img src="assets/screenshots/01-library.png" alt="The BetterBookmarks start page in card view, showing Spaces and folders" loading="lazy" onerror="this.remove()">
-          </div>
-          <figcaption>Card view. Spaces across the top, folders below, everything draggable.</figcaption>
+          <button class="frame" type="button" data-full="assets/screenshots/01-start-page.png"
+                  aria-label="Enlarge: Tree view">
+            <img src="assets/screenshots/thumbs/01-start-page.jpg" alt="The BetterBookmarks start page in tree view, with Spaces along the top and an open tabs column beside the library"
+                 width="1400" height="875" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Tree view. Spaces along the top, folders below, and every open tab in the column beside them, grouped by the site it belongs to.</figcaption>
         </figure>
         <figure>
-          <div class="frame" data-file="assets/screenshots/02-open-tabs.png">
-            <img src="assets/screenshots/02-open-tabs.png" alt="Tree view with the open tabs column beside it" loading="lazy" onerror="this.remove()">
-          </div>
-          <figcaption>Tree view with open tabs alongside, grouped by site and marked live.</figcaption>
+          <button class="frame" type="button" data-full="assets/screenshots/02-card-view.png"
+                  aria-label="Enlarge: Card view, for when you would rather see what is inside a folder than open it">
+            <img src="assets/screenshots/thumbs/02-card-view.jpg" alt="The same library in card view, each folder shown as a card listing its pages"
+                 width="1400" height="875" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Card view, for when you would rather see what is inside a folder than open it.</figcaption>
         </figure>
         <figure>
-          <div class="frame" data-file="assets/screenshots/03-capture.png">
-            <img src="assets/screenshots/03-capture.png" alt="The toolbar popup saving the current page" loading="lazy" onerror="this.remove()">
-          </div>
-          <figcaption>Saving the page you are on, from the toolbar.</figcaption>
+          <button class="frame" type="button" data-full="assets/screenshots/03-subfolders.png"
+                  aria-label="Enlarge: Folders nest as deep as the subject needs">
+            <img src="assets/screenshots/thumbs/03-subfolders.jpg" alt="A university Space with folders nested several levels deep"
+                 width="1400" height="875" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Folders nest as deep as the subject needs. A semester holds its units, and a unit holds its pages.</figcaption>
         </figure>
         <figure>
-          <div class="frame" data-file="assets/screenshots/04-import.png">
-            <img src="assets/screenshots/04-import.png" alt="The import screen showing a dry-run preview" loading="lazy" onerror="this.remove()">
-          </div>
-          <figcaption>Import, with a dry-run preview before anything is written.</figcaption>
+          <button class="frame" type="button" data-full="assets/screenshots/04-open-tabs.png"
+                  aria-label="Enlarge: The chips count how many of this Space's saved pages are open right now, and how many have a tab open somewhere else on the same site">
+            <img src="assets/screenshots/thumbs/04-open-tabs.jpg" alt="A Space in dark mode showing counts of open and nearby saved pages"
+                 width="1400" height="875" loading="lazy" decoding="async">
+          </button>
+          <figcaption>The chips count how many of this Space&rsquo;s saved pages are open right now, and how many have a tab open somewhere else on the same site.</figcaption>
+        </figure>
+        <figure>
+          <button class="frame" type="button" data-full="assets/screenshots/05-save-from-toolbar.png"
+                  aria-label="Enlarge: Saving the page you are on: pick the folder, add a note if it needs one">
+            <img src="assets/screenshots/thumbs/05-save-from-toolbar.jpg" alt="The toolbar popup saving the current page, with a folder picker and a note field"
+                 width="1400" height="875" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Saving the page you are on: pick the folder, add a note if it needs one. Or file every open tab into a new folder in one go.</figcaption>
+        </figure>
+        <figure>
+          <button class="frame" type="button" data-full="assets/screenshots/06-import-preview.png"
+                  aria-label="Enlarge: Import tells you what it is about to do before it does it, and the whole thing can be undone in one step afterwards">
+            <img src="assets/screenshots/thumbs/06-import-preview.jpg" alt="The import screen showing a dry-run preview of what will be added and updated"
+                 width="1400" height="875" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Import tells you what it is about to do before it does it, and the whole thing can be undone in one step afterwards.</figcaption>
+        </figure>
+        <figure>
+          <button class="frame" type="button" data-full="assets/screenshots/07-languages.png"
+                  aria-label="Enlarge: Settings in Turkish">
+            <img src="assets/screenshots/thumbs/07-languages.jpg" alt="The settings page displayed in Turkish"
+                 width="1400" height="875" loading="lazy" decoding="async">
+          </button>
+          <figcaption>Settings in Turkish. English, German, Spanish, French, Turkish, Chinese and Hindi, picked from your system on first run.</figcaption>
         </figure>
       </div>
     </div>
@@ -310,6 +351,89 @@
     </nav>
   </div>
 </footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+  <button class="lb-close" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous screenshot">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 5-7 7 7 7"/></svg>
+  </button>
+  <img class="lb-img" alt="">
+  <button class="lb-nav lb-next" type="button" aria-label="Next screenshot">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 5 7 7-7 7"/></svg>
+  </button>
+  <p class="lb-caption"><span class="lb-count"></span><span class="lb-text"></span></p>
+</dialog>
+
+<script>
+(function () {
+  var dialog = document.getElementById('lightbox');
+  var frames = Array.prototype.slice.call(document.querySelectorAll('.shots .frame'));
+  if (!dialog || !frames.length || typeof dialog.showModal !== 'function') return;
+
+  var shots = frames.map(function (frame) {
+    var img = frame.querySelector('img');
+    return {
+      full: frame.dataset.full,
+      thumb: img.getAttribute('src'),
+      alt: img.getAttribute('alt'),
+      caption: frame.closest('figure').querySelector('figcaption').textContent.trim(),
+    };
+  });
+
+  var img = dialog.querySelector('.lb-img');
+  var text = dialog.querySelector('.lb-text');
+  var count = dialog.querySelector('.lb-count');
+  var index = 0;
+
+  function show(i) {
+    index = (i + shots.length) % shots.length;
+    var shot = shots[index];
+    // The thumbnail is already in cache, so it paints immediately and the full
+    // image replaces it once decoded. Without this the viewer flashes empty for
+    // as long as a 2560px PNG takes to arrive.
+    img.src = shot.thumb;
+    img.alt = shot.alt;
+    text.textContent = shot.caption;
+    count.textContent = index + 1 + ' / ' + shots.length;
+    var full = new Image();
+    full.onload = function () {
+      if (shots[index] === shot) img.src = shot.full;
+    };
+    full.src = shot.full;
+  }
+
+  frames.forEach(function (frame, i) {
+    frame.addEventListener('click', function () {
+      show(i);
+      dialog.showModal();
+      document.documentElement.classList.add('is-locked');
+    });
+  });
+
+  dialog.querySelector('.lb-prev').addEventListener('click', function () { show(index - 1); });
+  dialog.querySelector('.lb-next').addEventListener('click', function () { show(index + 1); });
+  dialog.querySelector('.lb-close').addEventListener('click', function () { dialog.close(); });
+
+  // Escape and focus trapping come from <dialog>. The arrow keys do not.
+  dialog.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); show(index - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); show(index + 1); }
+  });
+
+  // Everything visible is a child element, so a click that lands on the dialog
+  // itself landed on the empty space around the image.
+  dialog.addEventListener('click', function (e) {
+    if (e.target === dialog) dialog.close();
+  });
+
+  dialog.addEventListener('close', function () {
+    document.documentElement.classList.remove('is-locked');
+    frames[index].focus();
+  });
+})();
+</script>
 
 </body>
 </html>

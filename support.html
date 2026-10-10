@@ -88,6 +88,27 @@
         oblivion.
       </p>
 
+      <h2>Syncing between Macs</h2>
+      <p>
+        <strong>Settings &rarr; Sync</strong>. Press <strong>Sync now</strong> on each Mac and they
+        converge: the file in your iCloud Drive and the library in front of you are merged, and the
+        result goes back up. Nothing is scheduled, so nothing moves without you.
+      </p>
+      <p>
+        Because it merges, the order does not matter and syncing twice does nothing the second
+        time. Saves, renames, moves and deletions all travel. When two Macs write at the same
+        moment iCloud keeps both versions, and the next sync folds them in rather than picking one.
+      </p>
+      <h3>When it has gone wrong</h3>
+      <p>
+        Under <strong>Recovery</strong> there are two more, and they are not sync.
+        <strong>Take the iCloud version</strong> moves this Mac&rsquo;s library to Trash and puts
+        the iCloud one in its place. <strong>Overwrite iCloud with this Mac</strong> does the
+        reverse, and does not keep what it replaced. Both say what they are about to do, with
+        counts, before they do it. Reach for them when something has gone wrong, not as a way to
+        sync.
+      </p>
+
       <h2>Backups</h2>
       <p>
         <strong>Settings &rarr; Export</strong> offers three files.
@@ -136,14 +157,14 @@
         <details>
           <summary>Does my library sync between my Macs?</summary>
           <p>
-            No, and it would be dishonest to imply otherwise. Safari exposes a sync storage API but
-            it does not actually sync across devices, so building on it would give you a library
-            that looks synced and is not.
+            Yes, through iCloud. <strong>Settings &rarr; Sync &rarr; Sync now</strong> writes one
+            file to your own iCloud Drive and merges it with the library on the Mac in front of
+            you. Do the same on the other Mac and both end up holding everything.
           </p>
           <p>
-            Move a library deliberately instead: <strong>Export backup (JSON)</strong> on one Mac,
-            <strong>Import</strong> on the other. Because import is idempotent, you can repeat it
-            whenever you like without creating duplicates.
+            It merges rather than overwrites, so a page saved on one Mac and a folder renamed on
+            the other both survive, and a deletion travels too. There is no schedule yet: it syncs
+            when you ask it to.
           </p>
         </details>
         <details>
@@ -167,8 +188,9 @@
             the existing tab rather than opening a duplicate. That is the whole reason.
           </p>
           <p>
-            It asks for no host permissions, which means it cannot read the contents of the pages
-            you visit. It sees the addresses of open tabs and nothing else.
+            Safari puts a tab&rsquo;s address behind website access, so it has to ask for that too.
+            It ships no content scripts, which means nothing of it runs inside the pages you visit:
+            it sees a tab&rsquo;s address and title, and nothing else.
           </p>
         </details>
         <details>
